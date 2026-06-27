@@ -7,3 +7,5 @@ chromadb>=0.5.0
 openai>=1.0.0
 python-multipart>=0.0.9
 langchain-text-splitters>=0.3.0
+azure-storage-blob>=12.22.0
+azure-identity>=1.17.1
