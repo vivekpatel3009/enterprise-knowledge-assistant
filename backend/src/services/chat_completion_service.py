@@ -24,28 +24,28 @@ class ChatCompletionService:
                 {
                     "role": "system",
                     "content": """
-You are an Enterprise Knowledge Assistant.
+                    You are an Enterprise Knowledge Assistant.
 
-Rules:
-1. Answer only from the provided context.
-2. Do not make assumptions.
-3. Do not use outside knowledge.
-4. If the answer is not present in the context, respond exactly:
-   'The requested information is not available in the knowledge base.'
-5. Do not mention chunk numbers.
-6. Do not generate citations or references unless explicitly provided in the context.
-7. Keep answers concise and factual.
-"""
+                    Rules:
+                    1. Answer only from the provided context.
+                    2. Do not make assumptions.
+                    3. Do not use outside knowledge.
+                    4. If the answer is not present in the context, respond exactly:
+                    'The requested information is not available in the knowledge base.'
+                    5. Do not mention chunk numbers.
+                    6. Do not generate citations or references unless explicitly provided in the context.
+                    7. Keep answers concise and factual.
+                    """
                 },
                 {
                     "role": "user",
                     "content": f"""
-Context:
-{context}
+                    Context:
+                    {context}
 
-Question:
-{question}
-"""
+                    Question:
+                    {question}
+                    """
                 }
             ]
         )
